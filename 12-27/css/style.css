@@ -205,7 +205,8 @@ margin-top: 1.8em;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: stretch;
-	align-content: center;
+    align-content: center;
+    position: relative;
 }
 
 .link-more>a, .categories p{
@@ -487,6 +488,7 @@ padding: 5px 20px 5px 20px;
 .one-series img{
     float:right;
 }
+
 /* Filters */
 #filter-collapse-button select, .product-dscr select{
     background-color: #E7ECEF;
@@ -676,7 +678,8 @@ color: #F15025;
 .circle{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%; z-index:0;
+    border-radius: 50%;
+    z-index:0;
 }
 .circleBig{
     width: 20vw;
@@ -697,14 +700,23 @@ color: #F15025;
 }
 
 .circleblue{
-    position: absolute;
-    background-color: rgba(65, 151, 190, 0.4);
-    width: 50px;
-    height: 50px;
-    float:left;
-    overflow: hidden;
-    border-radius: 50%;
+    background-color: rgba(216, 239, 244, 0.8);
+    width: 3vw;
+    height: 3vw;
+    top: 40%;
+    z-index:-1;
 }
+
+.circlegray{
+    position: absolute;
+    background-color: rgba(231, 236, 239, 0.6);
+    width: 5vw;
+    height: 5vw;
+    top: 50%;
+    z-index:-1;
+}
+
+
 
 .repairs .column p>img{
     margin: 50px 20px 0 0;
@@ -909,7 +921,7 @@ color: #F15025;
     cursor: pointer;
 }
 
-/* Large display */
+/* Extra Large display */
 @media(max-width: 1171px) {
     .choose-brand>button{
         width: 80px;
@@ -918,14 +930,14 @@ color: #F15025;
 
 }
 
-/* Medium display */
+/* Large display */
 @media(max-width: 1170px) and (min-width: 1024px) {
     .grid-item {
         flex-basis: 33.33%;
     }
 }
 
-/* Small display */
+/* Medium display */
 @media(max-width: 1023px) and (min-width: 721px){
     #aligncenter{
         padding: 1.5rem 0;
@@ -947,7 +959,7 @@ color: #F15025;
     }    
 
 }
-/*bulma mobile*/ 
+/*Small bulma mobile*/ 
 @media(max-width: 768px) {
     .is-mobile-reversed {
         flex-direction: column-reverse;
@@ -959,8 +971,11 @@ color: #F15025;
     .footer-right>p, .footer-right>h2, .footer-right>div{
         text-align: center;
     }
-}
 
+    .one-series div:last-child{
+        display:none;
+    }
+}
 
 /* Extra small display */
 @media(max-width: 720px) {
@@ -1011,6 +1026,7 @@ color: #F15025;
         display: none;
     } 
 }
+/* Super Small display */
     @media(max-width: 555px) {
     .grid-item {
         flex-basis: 100%;
@@ -1033,3 +1049,5 @@ color: #F15025;
     right: 0;
     z-index: 2;
   }
+
+  

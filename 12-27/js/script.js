@@ -32,12 +32,4 @@ bulmaCarousel.attach(document.querySelector(".carousel"), {
 	enableSwipeNavigation: true,
 	autoplay: false,
 });
-  
 
-bulmaCarousel.attach(document.querySelector(".carousel-one"), {
-	slidesToScroll: 1,
-	slidesToShow: 1,
-	pagination: false,
-	enableSwipeNavigation: true,
-	autoplay: false,
-});
