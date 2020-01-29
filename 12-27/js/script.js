@@ -1,35 +1,91 @@
-// Main nav menu
-(function() {
-    document.querySelector('.burger').addEventListener('click',
-    function(){
-        document.querySelector('.burger').classList.toggle('is-active');
-        document.querySelector('#'+document.querySelector('.burger').dataset.target).classList.toggle('is-active');
-    });
-})();
+$(document).ready(function(){
 
-// Ask a question form
-// When the user clicks the button, open the modal 
-document.querySelector(".button").onclick = function() {
-    document.querySelector(".modal").style.display = "block";
-}
+  // Ask a question form
+  $('.close').click( function(){
+    $(".modal").hide();
+  });
 
-// When the user clicks on X, close the modal
-document.getElementsByClassName("close")[0].onclick = function() {
-    document.querySelector(".modal").style.display = "none";
-}
+  $('.button').click( function(){
+    $(".modal").show();
+  });
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == document.querySelector(".modal")) {
-    document.querySelector(".modal").style.display = "none";
-  }
-}
+  $(window).click( function(event){
+    if (event.target == document.querySelector(".modal") ) {
+      $(".modal").hide();
+    }
+  });
 
-bulmaCarousel.attach(document.querySelector(".carousel"), {
-	slidesToScroll: 1,
-	slidesToShow: 3,
-	pagination: false,
-	enableSwipeNavigation: true,
-	autoplay: false,
+   // Search in menu
+   $('.close').click( function(){
+    $(".modal").hide();
+  });
+
+  $('.i-search').click( function(){
+    $(".modal.search").show();
+  });
+
+  $(window).click( function(event){
+    if (event.target == document.querySelector(".search") ) {
+      $(".search").hide();
+    }
+  });
+
+  //Main nav menu
+  $('.burger').click( function(){
+      $(this).toggleClass('is-active');
+      $("#"+$(this).data('target')).toggleClass('is-active');
+  });
+
+  $('.carousel').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
+
+  $('.slTabs').tabslet();
+
+  $('.single-item').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+  $('.responsive-carousel').slick({
+    dots: true,
+    infinite: true,
+    speed: 0,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  }); 
+
 });
 
