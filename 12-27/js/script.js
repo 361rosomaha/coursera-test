@@ -2,26 +2,23 @@ $(document).ready(function(){
 
   // Ask a question form
   $('.close').click( function(){
-    $(".modal").hide();
+    $(".form").hide();
   });
 
-  $('.button').click( function(){
-    $(".modal").show();
+  $('.button-form').click( function(){
+    $(".form").show();
   });
 
   $(window).click( function(event){
-    if (event.target == document.querySelector(".modal") ) {
-      $(".modal").hide();
+    if (event.target == document.querySelector(".form") ) {
+      $(".form").hide();
     }
   });
 
    // Search in menu
-   $('.close').click( function(){
-    $(".modal").hide();
-  });
 
   $('.i-search').click( function(){
-    $(".modal.search").show();
+    $(".search").show();
   });
 
   $(window).click( function(event){

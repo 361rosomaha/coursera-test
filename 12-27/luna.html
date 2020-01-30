@@ -67,9 +67,23 @@
           <a href="contact.html" class="navbar-item">
             Contact
           </a>
-          <a class="navbar-item">
-            <i class="orangecolor fas fa-search"></i>
-          </a>
+          <span class="navbar-item">
+            <i class="i-search orangecolor fas fa-search"></i>
+            <!--Search-->
+            <div class="modal search">
+              <div class="modal-content">
+                <div class="field">
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-medium" type="text" placeholder="Search">
+                    <span class="icon is-small is-left">
+                      <i class="orangecolor fas fa-search"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Search-->
+          </span>
         </div>
       </div>
     </nav>
@@ -217,45 +231,51 @@
   </div>
   
 
-<footer class="hero graybgcolor">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <img alt="Serva-Lite logo" src="images/serva-lite-logo.png">
-          <div class="columns">
-            <div class="column">
-              <ul class="footer-items">
-                <li><a href="#"><img alt="Emergency Lighting" src="images/footer/emergency.png"><span>Emergency Lighting</span></a></li>
-                <li><a href="#"><img alt="Lighting" src="images/footer/lighting.png"><span>Lighting</span></a></li>
-                <li><a href="#"><img alt="Alarm" src="images/footer/alarms.png"><span>Fire Alarms</span></a></li>
-                <li><a href="#"><img alt="Accessories" src="images/footer/accessories.png"><span>Accessories</span></a></li>
-              </ul>
-            </div>
-            <div class="column">
-              <ul class="footer-items">
-                <li><a href="#"><img alt="Batteries" src="images/footer/batteries.png"><span>Batteries</span></a></li>
-                <li><a href="#"><img alt="Extinguishers" src="images/footer/extg.png"><span>Extinguishers</span></a></li>
-                <li><a href="#"><img alt="ignalling/Output Devices" src="images/footer/signal.png"><span>Signalling/Output Devices</span></a></li>
-              </ul>
+  <footer class="hero graybgcolor">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <img alt="Serva-Lite logo" src="images/serva-lite-logo.png">
+            <div class="columns is-hidden-mobile">
+              <div class="column">
+                <ul class="footer-items">
+                  <li><a href="#"><img alt="Emergency Lighting" src="images/footer/emergency.png"><span>Emergency Lighting</span></a></li>
+                  <li><a href="#"><img alt="Lighting" src="images/footer/lighting.png"><span>Lighting</span></a></li>
+                  <li><a href="#"><img alt="Alarm" src="images/footer/alarms.png"><span>Fire Alarms</span></a></li>
+                  <li><a href="#"><img alt="Accessories" src="images/footer/accessories.png"><span>Accessories</span></a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer-items">
+                  <li><a href="#"><img alt="Batteries" src="images/footer/batteries.png"><span>Batteries</span></a></li>
+                  <li><a href="#"><img alt="Extinguishers" src="images/footer/extg.png"><span>Extinguishers</span></a></li>
+                  <li><a href="#"><img alt="ignalling/Output Devices" src="images/footer/signal.png"><span>Signalling/Output Devices</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column footer-right">
-          <h2>Individual customer approach</h2>
-          <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex.</p>
-          <button class="button is-primary is-large">Ask a question</button>
+          <div class="column footer-right">
+            <h2>Individual customer approach</h2>
+            <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex.</p>
+            <div><button class="button is-primary is-large">Ask a question</button></div>
+          </div>
+          <div class="is-hidden-touch">
+          <div class="circle circleBig"></div>
+          <div class="circle circleMedium"></div>
+          <div class="circle circleSmall"></div>
+          <div class="circle circleExtraBig"></div>
+        </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <p>8038 Winston Street, Burnaby, BC V5A 2H5, 604-275-4310</p>
-    <p id="copyright-string">Copyright © 2019 Sterva-Lite Ltd. All Rights Reserved. Privacy Policy</p>
-  </div>
-</footer>
+    <div class="footer-copyright">
+      <p>8038 Winston Street, Burnaby, BC V5A 2H5, 604-275-4310</p>
+      <p id="copyright-string">Copyright © 2019 Sterva-Lite Ltd. All Rights Reserved. Privacy Policy</p>
+    </div>
+  </footer>
 
 <script src="https://kit.fontawesome.com/345489f052.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
