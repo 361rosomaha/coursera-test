@@ -10,15 +10,22 @@ $(document).ready(function(){
   });
 
   $(window).click( function(event){
-    if (event.target == document.querySelector(".form") ) {
+    if (event.target == document.querySelector(".form")) {
       $(".form").hide();
     }
   });
+
+  //Filter reset
+    $("#reset").on("click", function () {
+      $("select").each(function() { this.selectedIndex = 0
+      });
+    });
 
    // Search in menu
 
   $('.i-search').click( function(){
     $(".search").show();
+    $(".modal.search input.is-large").focus();
   });
 
   $(window).click( function(event){
@@ -40,6 +47,17 @@ $(document).ready(function(){
   });
 
   $('.slTabs').tabslet();
+  
+  $('.gallery-tabs').tabslet();
+  $('.gallery-tabs').on("_after", function() {
+    $('.single-item').slick('setPosition', 0);
+      // $('.single-item').slick({
+      //   dots: true,
+      //   infinite: true,
+      //   slidesToShow: 1,
+      //   adaptiveHeight: true
+      // });
+  });
 
   $('.single-item').slick({
     dots: true,
@@ -78,11 +96,16 @@ $(document).ready(function(){
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
-  }); 
+  });
+
+  $('.hint').hover(function(){
+    $(this).html( $("<span>"+$(this).data('hint')+"</span>"));
+  },
+  function (){
+      $(this).html($(""));
+  });
 
 });
+
 
