@@ -1001,8 +1001,7 @@ footer.hero.graybgcolor .circleExtraBig{
     background-color: #E7ECEF;
     margin: 0 10px;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;flex-direction: column;
 }
 .carousel .wrapper-carousel-img>a>div>img{
     flex-direction: column;
