@@ -51,12 +51,6 @@ $(document).ready(function(){
   $('.gallery-tabs').tabslet();
   $('.gallery-tabs').on("_after", function() {
     $('.single-item').slick('setPosition', 0);
-      // $('.single-item').slick({
-      //   dots: true,
-      //   infinite: true,
-      //   slidesToShow: 1,
-      //   adaptiveHeight: true
-      // });
   });
 
   $('.single-item').slick({
