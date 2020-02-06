@@ -1000,12 +1000,6 @@ footer.hero.graybgcolor .circleExtraBig{
 .carousel .wrapper-carousel-img>a>div{
     background-color: #E7ECEF;
     margin: 0 10px;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: center;
 }
 .responsive-carousel .wrapper-carousel-img>a>div{
     margin: 0 10px;    
@@ -1013,7 +1007,6 @@ footer.hero.graybgcolor .circleExtraBig{
     border: 2px solid #D8EFF4;
     text-align: center;
     display: block;
-    /* min-height: 290px; */
     overflow: hidden;
 }
 
