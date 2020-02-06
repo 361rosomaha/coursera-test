@@ -2,7 +2,9 @@
 	font-family: 'Noto Sans';
 	color: #242424; 
 }
-
+a{
+    color:#F15025;
+}
 .wrapper-slider-img span{
     font-family: 'Noto Sans';
     color: #242424; 
@@ -291,7 +293,7 @@ a.navbar-link:hover,  a.navbar-link:active, .navbar-dropdown>a:hover{
 
 /* Brands */
 .brand-tiles>h3{
-    margin:50px auto;
+    margin:30px auto;
 }
 
 .brand-tiles>.columns>.column{
@@ -775,8 +777,8 @@ footer.hero.graybgcolor .circleExtraBig{
 /* Repairs */
 
 .repairs .column p>img{
-    margin: 50px 20px 0 0;
-    height: 35px;
+    margin: 20px 20px 0 0;
+    max-width: 100px;
 }
 
 /* About */
@@ -806,12 +808,11 @@ footer.hero.graybgcolor .circleExtraBig{
 }
 
 .contact>.is-7>div{
-    padding:20px 50px;
+    padding: 20px;
     width: 100%;
     background-color: #D8EFF4;
-    display: flex;
-    flex-direction: column;
 }
+
 .contact>.is-7>div>div{
     display: flex;
     align-items: center;
@@ -898,7 +899,7 @@ footer.hero.graybgcolor .circleExtraBig{
 }
 
 .hero-title-center .hero-body{
-    padding: 1rem 0;
+    padding: 1rem;
 }
 /* Ask a question form */
 .modal{
@@ -1334,9 +1335,9 @@ footer.hero.graybgcolor .circleExtraBig{
         display: none;
     }
 
-.brand-tiles>.columns>.column>div>div{
-    display:inline-block;
-}
+    .brand-tiles>.columns>.column>div>div{
+        display:inline-block;
+    }
 
     .coworkers img{
         max-width: 250px;
@@ -1396,5 +1397,9 @@ footer.hero.graybgcolor .circleExtraBig{
 header.container {margin:5px auto;}
 .footer-copyright {padding:0 20px}
 .carouselWrapper {width:100vw; overflow:hidden;}
-.wrapper-carousel-img {flex-shrink: 0;}
-.wrapper-carousel-img img {width: 100%;}
+/* .wrapper-carousel-img {flex-shrink: 0;}
+.wrapper-carousel-img img {width: 100%;} */
+
+.carousel img{
+    max-width: none;
+}
