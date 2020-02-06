@@ -70,7 +70,7 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     speed: 0,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 4,
     responsive: [
       {
