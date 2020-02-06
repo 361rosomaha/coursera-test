@@ -1000,6 +1000,8 @@ footer.hero.graybgcolor .circleExtraBig{
 .carousel .wrapper-carousel-img>a>div{
     background-color: #E7ECEF;
     margin: 0 10px;
+    display: flex;
+    justify-content: center;
 }
 .responsive-carousel .wrapper-carousel-img>a>div{
     margin: 0 10px;    
@@ -1391,4 +1393,3 @@ header.container {margin:5px auto;}
 .footer-copyright {padding:0 20px}
 .carouselWrapper {width:100vw; overflow:hidden;}
 .carousel.wrapper-carousel-img {flex-shrink: 0;}
-.carousel.wrapper-carousel-img img{width: 10px;}
