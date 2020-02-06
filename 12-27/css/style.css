@@ -1398,8 +1398,4 @@ header.container {margin:5px auto;}
 .footer-copyright {padding:0 20px}
 .carouselWrapper {width:100vw; overflow:hidden;}
 .wrapper-carousel-img {flex-shrink: 0;}
-.wrapper-carousel-img img {width: 100%;}
-
-.carousel img{
-    max-width: none;
-}
+.wrapper-carousel-img img {width: 100%; height:auto;}
