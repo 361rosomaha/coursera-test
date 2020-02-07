@@ -561,10 +561,6 @@ padding: 5px 20px 5px 20px;
     width: 180px;
 }
 
-.filter .navbar-item{
-    margin: 5px;
-    min-width: 120px;
-}
 
 .filter{
     position: relative;
@@ -572,11 +568,17 @@ padding: 5px 20px 5px 20px;
 }
 
 
-.bf2 {display:none}
+.bf2 {display:none;}
 
 .burgerFilter.is-active .bf1 {display:none;}
 .burgerFilter.is-active .bf2 {display: block;}
 
+.bf1{
+    color: #033A44;
+}
+.bf1:hover{
+    color: #F15025;
+}
 @media screen and (min-width: 1024px) {
     .burgerFilter {
         display: none;
@@ -586,8 +588,11 @@ padding: 5px 20px 5px 20px;
 .filter .burgerFilter i{
     float:right;
     padding: 10px;
+    height: 40px;
+    width: 40px;
     background-color: #D8EFF4; 
     border-radius: 50%;
+    text-align: center;
 }
 
 .filter .burgerFilter {
@@ -702,6 +707,9 @@ p.is-hidden-tablet{
     margin: 5px;
     text-decoration: underline;
     cursor: pointer;
+    margin: 0.5rem 0;
+    font-size: 1em;
+    padding: 0.2em 0.6em;
 }
 
 .certificate-logos img{
@@ -1479,7 +1487,7 @@ header.container {
     border-bottom: 1px solid #ddd;
 }
 
-.multi-select-menuitem input {
+.multi-select-menuitem>input{
     position: absolute;
     margin-top: 0.25em;
     margin-left: -20px;
@@ -1487,16 +1495,14 @@ header.container {
 
 .multi-select-button {
     display: inline-block;
-    font-size: 0.875em;
+    font-size: 1em;
     padding: 0.2em 0.6em;
     max-width: 16em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     vertical-align: -0.5em;
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 4px;
+    background-color: #E7ECEF;
     cursor: default;
 }
 

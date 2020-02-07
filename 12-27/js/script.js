@@ -110,6 +110,10 @@ $(document).ready(function(){
   $('#filter-collapse-button select').each(function() {
     $(this).multiSelect({ noneText: $(this).data('hint')});
   })
+
+  $('#filter-collapse-button select').each(function() {
+    $(this).multiSelect({ noneText: $(this).data('hint')});
+  })
   
 
 
