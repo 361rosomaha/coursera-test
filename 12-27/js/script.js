@@ -40,6 +40,12 @@ $(document).ready(function(){
       $("#"+$(this).data('target')).toggleClass('is-active');
   });
 
+  //filter
+  $('.burgerFilter').click( function(){
+    $(this).toggleClass('is-active');
+    $("#"+$(this).data('target')).toggleClass('is-active');
+});
+
   $('.carousel').slick({
     infinite: true,
     slidesToShow: 3,
@@ -99,6 +105,13 @@ $(document).ready(function(){
   function (){
       $(this).html($(""));
   });
+
+
+  $('#filter-collapse-button select').each(function() {
+    $(this).multiSelect({ noneText: $(this).data('hint')});
+  })
+  
+
 
 });
 
