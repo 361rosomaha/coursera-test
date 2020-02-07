@@ -111,11 +111,9 @@ $(document).ready(function(){
     $(this).multiSelect({ noneText: $(this).data('hint')});
   })
 
-  $('#filter-collapse-button select').each(function() {
-    $(this).multiSelect({ noneText: $(this).data('hint')});
-  })
-  
-
+// $('.input').on(click(){
+//   $(this).multiSelect({})
+// })
 
 });
 
