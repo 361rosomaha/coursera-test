@@ -518,7 +518,8 @@ clear: both;
 }
 
 .grid-item-content {
-padding: 5px 20px 5px 20px;
+padding: 5px 10px 5px 10px;
+
 }
 
 /* One-series */
@@ -964,10 +965,6 @@ footer.hero.graybgcolor .circleExtraBig{
   /* Modal Content */
   .modal-content .control {max-width: 90%; margin: 0 auto;}
 
-.modal-content form>input:first-child{
-    margin-top: 50px;
-}
-
 .modal-content form>button{
     margin: 30px 0;
 }
@@ -982,12 +979,21 @@ footer.hero.graybgcolor .circleExtraBig{
 
 .textarea{
     height: 130px;
-    margin: 12px auto;
+    margin: auto;
     border: 1px solid #898989;
     border-radius: 0;
     color: #242424; 
 }
 
+.modal-content form input{
+    margin-bottom: 20px;
+    border-radius: 0;
+    border: 1px solid #898989;
+}
+
+.modal-content form{
+    margin-top: 10%;
+}
 .search-modal {
     margin: auto;
     width: auto;
@@ -1047,11 +1053,16 @@ footer.hero.graybgcolor .circleExtraBig{
 }
 .responsive-carousel .wrapper-carousel-img>a>div{
     margin: 0 10px;    
+    padding: 10px;
     background-color: #fff;
     border: 2px solid #D8EFF4;
     text-align: center;
     display: block;
     overflow: hidden;
+}
+
+.responsive-carousel .grid-item-content{
+    color: #242424;
 }
 
 .responsive-carousel>ul{
@@ -1336,13 +1347,14 @@ footer.hero.graybgcolor .circleExtraBig{
     #navbar-collapse-button .navbar-link::after{
         display: none;
     }
-    #filter-collapse-button .navbar-item:nth-child(1){
-        margin-top: 40px;
-    }
+
+}
+
+@media(max-width: 1023px) {
     #filter-collapse-button .navbar-item,
     #filter-collapse-button #reset{
         margin-left: 40px;
-    }
+}
 }
 
 @media(max-width: 900px){
@@ -1481,16 +1493,7 @@ header.container {
     font-size: 0.875em;
     padding: 0.6em 1em 0.6em 30px;
     white-space: nowrap;
-}
-
-input[type="checkbox"]{
-    height:20px;
-    width:20px;
-    display: inline-block;
-    background-color: #F15025;
-    border-radius: 5px;
-    border: 1px solid #898989;
-    cursor: pointer;
+    text-align: left;
 }
 
 .multi-select-menuitem--titled:before {
@@ -1572,3 +1575,44 @@ input[type="checkbox"]{
     white-space: normal;
 }
 /*----------------------------MultiSelect------------------------*/
+
+#product-filter .multi-select-menuitems label {text-align: left;}
+
+/*custom filter checkboxes*/
+.multi-select-menuitem {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .multi-select-menuitem input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .multi-select-menuitem label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .multi-select-menuitem label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #0079bf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .multi-select-menuitem input:checked + label:before {
+    content: '';
+    background: #0079bf;
+  }

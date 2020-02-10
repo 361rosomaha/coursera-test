@@ -17,8 +17,7 @@ $(document).ready(function(){
 
   //Filter reset
     $("#reset").on("click", function () {
-      $("select").each(function() { this.selectedIndex = 0
-      });
+      $($(this).data('child')+ " input:checkbox:checked").click();
     });
 
    // Search in menu
@@ -106,15 +105,23 @@ $(document).ready(function(){
       $(this).html($(""));
   });
 
+  $('.hint1').hover(function(){
+    $(this).html( $("<span>"+$(this).data('hint1')+"</span>"));
+  },
+  function (){
+      $(this).html($(""));
+  });
 
+
+  initMultiCheckboxes();
+});
+
+function initMultiCheckboxes() {
   $('#filter-collapse-button select').each(function() {
     $(this).multiSelect({ noneText: $(this).data('hint')});
   })
-
-// $('.input').on(click(){
-//   $(this).multiSelect({})
-// })
-
-});
-
-
+  
+  $('#product-filter select').each(function() {
+    $(this).multiSelect({ noneText: $(this).data('hint1')});
+  })
+}

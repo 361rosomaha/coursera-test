@@ -126,43 +126,45 @@
               <span class="bf2"><i class="greencolor fas fa-times"></i></span>
           </a>
           <div id="filter-collapse-button" class="navbar-menu">
-              <span class="navbar-start">
+              <div class="navbar-start">
                   <div class="navbar-item">
-                    <select name="f1" class="navbar-item" style="margin-left:0px;" multiple data-hint="Normal Size">
+                    <select name="f1" multiple data-hint="Normal Size">
                       <option value="2">2"</option>
                       <option value="3">3"</option>
                       <option value="3.5">3.5"</option>
                     </select>
                   </div>
                   <div class="navbar-item">
-                    <select name="f2" class="navbar-item" multiple data-hint="Color Temperature">
+                    <select name="f2" multiple data-hint="Color Temperature">
                       <option value="2">2"</option>
                       <option value="3">3"</option>
                       <option value="3.5">3.5"</option>
                     </select>
                   </div>
                  <div class="navbar-item">
-                  <select name="f3" class="navbar-item" multiple data-hint="Fixture Color">
+                  <select name="f3" multiple data-hint="Fixture Color">
                     <option value="2">2"</option>
                     <option value="3">3"</option>
                     <option value="3.5">3.5"</option>
                   </select>
                  </div>
                  <div class="navbar-item">
-                  <select name="f4" class="navbar-item" multiple data-hint="Wattage">
+                  <select name="f4" multiple data-hint="Wattage">
                     <option value="2">2"</option>
                     <option value="3">3"</option>
                     <option value="3.5">3.5"</option>
                   </select>
                 </div>
                 <div class="navbar-item">
-                  <select name="f5" class="navbar-item" multiple data-hint="Output range">
+                  <select name="f5" multiple data-hint="Output range">
                     <option value="2">2"</option>
                     <option value="3">3"</option>
                     <option value="3.5">3.5"</option>
                   </select>
                 </div>
-                  <span id="reset">Reset Filters</span>
+                  <div id="reset" data-child=".multi-select-container">
+                    Reset Filters
+                  </div>
               </div>
             </div>
         </nav>
@@ -276,7 +278,7 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
-  <script type="text/javascript" src="js/jquery.multi-select.min.js"></script>  
+  <script type="text/javascript" src="js/jquery.multi-select.js"></script>  
   <script src="js/script.js"></script>
 </body>
 </html>

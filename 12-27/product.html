@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,31 +165,28 @@
         </div>
       </article>
       <p>2" Square Fixed Color Selectable Recessed Fixture</p>
-      <div class="columns">
+      <div id="product-filter" class="columns">
         <div class="column">
-          <select>
-            <option selected disabled>Normal Size</option>
+          <select name="c1" multiple data-hint1="Normal Size">
             <option value="2">2"</option>
             <option value="3">3"</option>
             <option value="3.5">3.5"</option>
           </select>
         </div>
         <div class="column">
-          <select>
-            <option selected disabled>Color Temperature</option>
+          <select name="c2" multiple data-hint1="Normal Size">
             <option value="2">2"</option>
             <option value="3">3"</option>
             <option value="3.5">3.5"</option>
           </select>
         </div>
         <div class="column">
-          <select>
-            <option selected disabled>Fixture Color</option>
+          <select name="c3" multiple data-hint1="Normal Size">
             <option value="2">2"</option>
             <option value="3">3"</option>
             <option value="3.5">3.5"</option>
           </select>
-          <div id="reset">
+          <div id="reset" data-child=".multi-select-container">
             Reset Filters
           </div>
         </div>
@@ -343,6 +339,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+<script type="text/javascript" src="js/jquery.multi-select.js"></script>  
 <script src="js/script.js"></script>
 </body>
 
