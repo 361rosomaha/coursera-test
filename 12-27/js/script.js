@@ -15,10 +15,13 @@ $(document).ready(function(){
     }
   });
   // Ask a question success-form
-  $('.form .button').click(function(){
-    if (document.querySelector("form.elements[]") != ""){
+  $('.form').submit(function(event){
+    if (document.querySelector(".form .input").value){
       $(".form").hide();
       $(".success-form").show();
+      $( ".form" ).submit(function( event ) {
+        event.preventDefault();
+      });
     }
   });
 
