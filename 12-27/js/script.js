@@ -14,6 +14,28 @@ $(document).ready(function(){
       $(".form").hide();
     }
   });
+  // Ask a question success-form
+  $('.form .button').click(function(){
+    if (document.querySelector("form.elements[]") != ""){
+      $(".form").hide();
+      $(".success-form").show();
+    }
+  });
+
+  $('.close').click( function(){
+    $(".success-form").hide();
+  });
+
+  // $('.modal-content .button').click(function(){
+  //   $(".success-form").show();
+  //   $(".form").hide();
+  // });
+
+  $(window).click( function(event){
+    if (event.target == document.querySelector(".success-form")) {
+      $(".success-form").hide();
+    }
+  });
 
   //Filter reset
     $("#reset").on("click", function () {

@@ -996,19 +996,35 @@ footer.hero.graybgcolor .circleExtraBig{
 }
 .search-modal {
     margin: auto;
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
+.success-form p:first-child, .success-form h2{
+    text-align: center;
+    margin-top: 40px;
+}
+.success-form .navbar-item{
+    margin: auto;
+    margin-top: 40px;
+}
+
+.success-form p:last-child{
+    margin-top: 40px;
+    text-align: left;
+}
+
 .search-modal>input{
-    width: 50%;
+    width: 100%;
     height: 40px;
     border: 1px solid #898989;
     font-size: 1em;
     line-height: 22px;
     padding: 0 10px;
 } 
-
+.field .input, .field .textarea{
+    box-shadow: none;
+}
 .modal-content {
     background-color: #fff;
     margin: auto;
@@ -1069,8 +1085,7 @@ footer.hero.graybgcolor .circleExtraBig{
     position: relative;
     display: flex!important;
     justify-content: center;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .responsive-carousel {
     margin-top: 25px;
@@ -1536,6 +1551,7 @@ header.container {
     font-size: 1em;
     padding: 0.2em 0.6em;
     max-width: 16em;
+    min-width: 8em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1602,9 +1618,8 @@ header.container {
     content:'';
     -webkit-appearance: none;
     background-color: transparent;
-    border: 2px solid #0079bf;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    border: 1px solid #aaa;
+    padding: 9px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -1614,5 +1629,6 @@ header.container {
   
   .multi-select-menuitem input:checked + label:before {
     content: '';
-    background: #0079bf;
+    background: #F15025;
+    border: 1px solid #F15025;
   }
