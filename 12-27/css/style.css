@@ -283,12 +283,12 @@ a.navbar-link:hover,  a.navbar-link:active, .navbar-dropdown>a:hover{
 
 .link-more>a, .categories p{
     color: #4A4A4A;
-    font-size: 1em;
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
 
 .link-more>a>i, .categories i{
     color: #898989;
-    font-size: 0.9em;
 }
 
 /* Brands */
